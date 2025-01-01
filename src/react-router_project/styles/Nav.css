@@ -1,102 +1,102 @@
-nav{
+.nav-div nav {
     background-color: rgb(164, 244, 162);
     display: flex;
     text-align: center;
     justify-content: space-between;
-    height: 8%;
+    height: 50%;
     width: 100%;
     /* position: fixed; */
     /* top: 1; */
-
-
-    
-}
-.nav-div{
+  }
+  .nav-div {
     position: fixed;
     top: 0;
     width: 100%;
-}
-nav div{
+    height: 90px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px;
+  
+  }
+  nav div {
     display: flex;
     gap: 10px;
-}
-
-
-
-
-.link{
+  }
+  .links {
+    height: 100%;
+    margin-right: 15px;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+  }
+  
+  .link {
+    padding-top: 8px;
+  
     margin-left: 10px;
     color: black;
     border-radius: 8px;
     font-weight: 700;
-}
-
-.link:hover{
+  }
+  
+  .link:hover {
     color: white;
     background-color: rgb(39, 112, 38);
-
-}
-
-nav form{
+  }
+  
+  nav form {
     margin-top: 5px;
     margin-right: 200px;
     margin-left: 10px;
-}
-
-nav form input{
+  }
+  
+  nav form input {
     width: 200px;
     height: 70%;
-
-}
-
-/* header */
-
-.header{
+  }
+  
+  /* header */
+  
+  .header {
     background-color: rgb(22, 178, 16);
     text-align: center;
-    color: white;
+    color: rgb(195, 255, 192);
     width: 100%;
     height: 100%;
-}
-
-.header i{
+  }
+  
+  .header i {
     margin-left: 10px;
     position: relative;
     top: 5px;
-}
-
-
-/* post */
-
-
-
-.post{
+  }
+  
+  /* post */
+  
+  .post {
     margin: 0 10px;
-    margin-top: 5px;
+    margin-bottom: 10px;
     text-align: start;
     display: flex;
     flex-direction: column;
     background-color: rgb(216, 255, 216);
-    
     padding: 15px;
     border-radius: 10px;
-}
-.postDate{
+  }
+  .postDate {
     font-size: small;
     margin-bottom: 5px;
-}
-.post .delete-btn{
+  }
+  .post .delete-btn {
     background-color: rgb(181, 20, 20);
     color: white;
     border: none;
     border-radius: 7px;
     margin-top: 10px;
     padding: 3px;
-    width: 15%;
+    width: 20%;
     cursor: pointer;
     margin-left: 15px;
-}
-.post .edit-btn{
+  }
+  .post .edit-btn {
     background-color: rgb(21, 75, 200);
     color: white;
     border: none;
@@ -106,52 +106,48 @@ nav form input{
     width: 15%;
     cursor: pointer;
     margin-left: 5px;
-}
-
-.post .delete-btn:hover{
+  }
+  
+  .post .delete-btn:hover {
     background-color: rgb(207, 36, 36);
-}
-.post .edit-btn:hover{
+  }
+  .post .edit-btn:hover {
     background-color: rgb(41, 101, 241);
-
-}
-
-/* new post */
-
-
-.NewPost {
+  }
+  
+  /* new post */
+  
+  .NewPost {
     background-color: rgb(216, 255, 216);
-    
-    margin: 10px;
+    margin: 10px 20rem;
     display: flex;
     flex-direction: column;
     text-align: center;
     border-radius: 10px;
     padding: 15px;
-}
-
-
-.NewPost .newPostForm{
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px;
+  }
+  
+  .NewPost .newPostForm {
     display: flex;
     flex-direction: column;
     margin: 20px;
-    height: 150px;
-    
-}
-
-.NewPost .newPostForm label{
+    height: 60%;
+  }
+  
+  .NewPost .newPostForm label {
     margin-top: 10px;
     font-size: larger;
-}
-
-.NewPost .newPostForm input[type="text"]{
+  }
+  
+  .NewPost .newPostForm input[type="text"] {
     height: 20px;
-}
-.NewPost .newPostForm textarea{
-    height: 50px;
-    resize: none;
-}
-.NewPost .newPostForm button{
+  }
+  .post-body{
+      resize: none;
+      height: 100px;
+  }
+  .NewPost .newPostForm button {
     position: relative;
     top: 8px;
     width: 100px;
@@ -162,21 +158,20 @@ nav form input{
     background-color: green;
     color: white;
     cursor: pointer;
-}
-
-.NewPost .newPostForm button:hover{
+  }
+  
+  .NewPost .newPostForm button:hover {
     background-color: rgb(10, 167, 10);
     color: white;
-}
-
-.NewPost .newPostForm .btn{
+  }
+  
+  .NewPost .newPostForm .btn {
     text-align: center;
-    
-}
-
-/* missing */
-
-.missing{
+  }
+  
+  /* missing */
+  
+  .missing {
     display: flex;
     flex-direction: column;
     background-color: rgb(255, 245, 156);
@@ -184,27 +179,96 @@ nav form input{
     width: 100%;
     text-align: center;
     justify-content: center;
-}
-
-/* about */
-
-.about{
+  }
+  
+  /* about */
+  
+  .about {
     background-color: rgb(216, 255, 216);
     text-align: center;
     display: flex;
     flex-direction: column;
     height: 100%;
-    width: 100%;
-    margin: 10px 0;
+    width: 80%;
+    margin-left: 8%;
     border-radius: 10px;
+    padding: 10px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px;
+
     
-}
-
-@media screen and (max-width: 600px) {
-        nav{
-            display: flex;
-            flex-direction: column;
-            height: 12%;
-
-        }
-}
+  }
+  
+  .contact {
+    background-color: rgb(216, 255, 216);
+    height: 55%;
+    width: 60%;
+    margin: 5%;
+    margin-top: 4rem;
+    border-radius: 10px;
+    padding-bottom: 1%;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px;
+  }
+  
+  .contact form {
+    text-align: start;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    width: 90%;
+    margin-left: 1%;
+    margin-top: 20px;
+    padding-top: 10px;
+  }
+  
+  .contact input {
+    margin-bottom: 10px;
+    border: solid rgb(176, 122, 22) 1px;
+    border-radius: 5px;
+    height: 30px;
+  }
+  .contact label {
+    color: black;
+    font-weight: 500;
+  }
+  
+  .contact textarea {
+    height: 140px;
+    border: solid rgb(176, 122, 22) 1px;
+    border-radius: 5px;
+  }
+  
+  .btn button {
+    margin-top: 5px;
+    width: 80px;
+    padding: 2px;
+    border: solid green 1.4px;
+    background-color: rgb(98, 221, 17);
+    font-weight: 600;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  .btn {
+    text-align: center;
+    justify-self: center;
+  }
+  .contact button:hover {
+    background-color: rgb(107, 236, 20);
+  }
+  
+  @media screen and (max-width: 600px) {
+    
+    .content {
+      margin-top: 120px;
+    }
+    .nav-div{
+      height: 110px;
+    }
+    .nav-div nav{
+      display: flex;
+      flex-direction: column;
+      height: 70px;
+    }
+    
+  
+  }
+  

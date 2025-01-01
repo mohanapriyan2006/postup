@@ -36,7 +36,7 @@ export const DataProvider = ({ children }) => {
         post.title.toLowerCase().includes(search.toLowerCase())
     );
 
-    setSearchResult(filteredSearch);
+    setSearchResult(filteredSearch.reverse());
   }, [posts, search]);
 
   // new post

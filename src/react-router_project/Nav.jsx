@@ -10,6 +10,18 @@ export const Nav = ({ title }) => {
     <div className="nav-div">
       <header>
         <h1 className="header">
+          <img
+            style={{
+              height: "30px",
+              width: "30px",
+              position: "relative",
+              top: "10px",
+              right: "10px",
+            }}
+            src="icon.png"
+            alt="icon"
+          />
+
           {title}
           <i>
             {width < 768 ? (
