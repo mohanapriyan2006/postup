@@ -1,0 +1,210 @@
+nav{
+    background-color: rgb(164, 244, 162);
+    display: flex;
+    text-align: center;
+    justify-content: space-between;
+    height: 8%;
+    width: 100%;
+    /* position: fixed; */
+    /* top: 1; */
+
+
+    
+}
+.nav-div{
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+nav div{
+    display: flex;
+    gap: 10px;
+}
+
+
+
+
+.link{
+    margin-left: 10px;
+    color: black;
+    border-radius: 8px;
+    font-weight: 700;
+}
+
+.link:hover{
+    color: white;
+    background-color: rgb(39, 112, 38);
+
+}
+
+nav form{
+    margin-top: 5px;
+    margin-right: 200px;
+    margin-left: 10px;
+}
+
+nav form input{
+    width: 200px;
+    height: 70%;
+
+}
+
+/* header */
+
+.header{
+    background-color: rgb(22, 178, 16);
+    text-align: center;
+    color: white;
+    width: 100%;
+    height: 100%;
+}
+
+.header i{
+    margin-left: 10px;
+    position: relative;
+    top: 5px;
+}
+
+
+/* post */
+
+
+
+.post{
+    margin: 0 10px;
+    margin-top: 5px;
+    text-align: start;
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(216, 255, 216);
+    
+    padding: 15px;
+    border-radius: 10px;
+}
+.postDate{
+    font-size: small;
+    margin-bottom: 5px;
+}
+.post .delete-btn{
+    background-color: rgb(181, 20, 20);
+    color: white;
+    border: none;
+    border-radius: 7px;
+    margin-top: 10px;
+    padding: 3px;
+    width: 15%;
+    cursor: pointer;
+    margin-left: 15px;
+}
+.post .edit-btn{
+    background-color: rgb(21, 75, 200);
+    color: white;
+    border: none;
+    border-radius: 7px;
+    margin-top: 10px;
+    padding: 3px;
+    width: 15%;
+    cursor: pointer;
+    margin-left: 5px;
+}
+
+.post .delete-btn:hover{
+    background-color: rgb(207, 36, 36);
+}
+.post .edit-btn:hover{
+    background-color: rgb(41, 101, 241);
+
+}
+
+/* new post */
+
+
+.NewPost {
+    background-color: rgb(216, 255, 216);
+    
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    border-radius: 10px;
+    padding: 15px;
+}
+
+
+.NewPost .newPostForm{
+    display: flex;
+    flex-direction: column;
+    margin: 20px;
+    height: 150px;
+    
+}
+
+.NewPost .newPostForm label{
+    margin-top: 10px;
+    font-size: larger;
+}
+
+.NewPost .newPostForm input[type="text"]{
+    height: 20px;
+}
+.NewPost .newPostForm textarea{
+    height: 50px;
+    resize: none;
+}
+.NewPost .newPostForm button{
+    position: relative;
+    top: 8px;
+    width: 100px;
+    text-align: center;
+    padding: 2px;
+    border-radius: 5px;
+    border: solid green;
+    background-color: green;
+    color: white;
+    cursor: pointer;
+}
+
+.NewPost .newPostForm button:hover{
+    background-color: rgb(10, 167, 10);
+    color: white;
+}
+
+.NewPost .newPostForm .btn{
+    text-align: center;
+    
+}
+
+/* missing */
+
+.missing{
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(255, 245, 156);
+    height: 100dvh;
+    width: 100%;
+    text-align: center;
+    justify-content: center;
+}
+
+/* about */
+
+.about{
+    background-color: rgb(216, 255, 216);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+    margin: 10px 0;
+    border-radius: 10px;
+    
+}
+
+@media screen and (max-width: 600px) {
+        nav{
+            display: flex;
+            flex-direction: column;
+            height: 12%;
+
+        }
+}
